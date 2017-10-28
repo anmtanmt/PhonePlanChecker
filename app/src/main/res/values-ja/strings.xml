@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">かけ放題損得判定</string>
+    <string name="launcher_name">かけ放損得</string>
+
+    <!-- メイン画面 -->
+    <string name="text_description_input">計算に使用する値</string>
+    <string-array name="list_duration_call">
+        <item>30秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string name="text_duration_description_1">ごとに</string>
+    <string name="text_currency_unit">円で計算します</string>
+    <string-array name="list_month_ago">
+        <item>3か月</item>
+        <item>6か月</item>
+        <item>12か月</item>
+        <item>24か月</item>
+    </string-array>
+    <string name="text_description_period">前までの発信履歴を分析します</string>
+
+    <string name="menu_start_analysis">分析</string>
+    <string name="button_start_analysis">分析開始</string>
+
+    <string name="text_result_initial">分析ボタンで開始\n結果をここに表示します</string>
+
+    <string name="progress_analyze">分析中</string>
+
+    <string name="text_title_this_month">(今月)</string>
+
+    <string name="text_result_title_call_out_cnt">【発信回数】</string>
+    <string name="text_result_total">総計：%1$d 回</string>
+    <string name="text_result_within_5m">5分以内の通話：%1$d 回</string>
+    <string name="text_result_within_5m_to_10m">5～10分以内の通話：%1$d 回</string>
+    <string name="text_result_over_10m">10分超過の通話：%1$d 回</string>
+
+    <string name="text_result_no_call_out_cnt">発信履歴がありません</string>
+
+    <string name="text_result_title_price_image">【料金シミュレーション】</string>
+    <string name="text_analysis_no_free_plan">かけ放題なしの場合：%1$d円</string>
+    <string name="text_analysis_5m_free_plan">5分かけ放題契約の場合：定額料金＋%1$d 円</string>
+    <string name="text_analysis_10m_free_plan">10分かけ放題契約の場合：定額料金＋%1$d 円</string>
+    <string name="text_analysis_5m_good_value">5分かけ放題料金が%1$d円以下であればお得</string>
+    <string name="text_analysis_10m_good_value">10分かけ放題料金が%1$d円以下であればお得</string>
+
+    <string name="toast_analyze_error">通話履歴を取得できませんでした</string>
+
+    <string name="toast_request_permission_call_log">通話履歴分析のために権限が必要です。よろしければ許可をお願いします。\n権限は本体設定のアプリからも変更できます。</string>
+
+    <string name="dialog_title_review">★お願い★</string>
+    <string name="msg_request_review">もし便利と感じてくださいましたら星５つ評価をお願いします！\n開発の励みになりますのでよろしければぜひお願いします！</string>
+    <string name="dialog_select_ng">また今度</string>
+    <string name="dialog_select_ok">評価する</string>
+
+</resources>

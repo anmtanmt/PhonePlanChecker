@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="jp.anmt.phoneplanchecker.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutInputOuter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_frame_shape"
+        android:layout_marginTop="@dimen/topPadding"
+        android:layout_marginBottom="@dimen/framePadding"
+        android:layout_marginLeft="@dimen/framePadding"
+        android:layout_marginRight="@dimen/framePadding"
+        android:orientation="vertical">
+
+        <!-- タイトル枠 -->
+        <LinearLayout
+            android:id="@+id/layoutInputInnerTitle"
+            android:background="@drawable/layout_frame_title_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- タイトル -->
+            <TextView
+                android:id="@+id/inputTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="@dimen/textPadding"
+                android:paddingTop="@dimen/textPadding"
+                android:paddingBottom="@dimen/textPadding"
+                android:textColor="@color/colorFontLight"
+                android:text="@string/text_description_input"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- 入力枠 -->
+        <LinearLayout
+            android:id="@+id/layoutInputInnerBase"
+            android:background="@color/colorBase1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 1行目 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerDurationCall"
+                    android:entries="@array/list_duration_call"
+                    android:spinnerMode="dropdown" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_duration_description_1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editPrice"
+                    android:inputType="number"
+                    android:text="20"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_currency_unit"/>
+            </LinearLayout>
+
+            <!-- 2行目 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/textPadding"
+                android:orientation="horizontal">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerMonthAgo"
+                    android:entries="@array/list_month_ago"
+                    android:spinnerMode="dropdown" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_description_period"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 3行目 -->
+    <!-- アクションバーのメニューから実行するのでボタンは削除 -->
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_analysis"
+        android:onClick="onClickStartAnalysisButton"/>
+    -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/strokeLine"
+        android:background="@color/colorFontLight" />
+
+    <!-- 分析結果表示 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutAnalyzeResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/framePadding"
+            android:paddingBottom="@dimen/framePadding"
+            android:paddingLeft="@dimen/framePadding"
+            android:paddingRight="@dimen/framePadding"
+            android:orientation="vertical">
+
+            <!-- 分析結果表示前の初期表示 -->
+            <LinearLayout
+                android:background="@color/colorBase2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/textPadding"
+                    android:paddingTop="@dimen/textPadding"
+                    android:paddingBottom="@dimen/textPadding"
+                    android:text="@string/text_result_initial"/>
+
+            </LinearLayout>
+
+
+            <!-- 中身は分析実行時に構築 -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

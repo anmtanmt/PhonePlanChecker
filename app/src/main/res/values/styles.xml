@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/CustomActionBarTheme</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Themeだとデザインが古くなる...-->
+    <style name="CustomTheme" parent="android:Theme.Light">
+        <!-- タイトルバーの高さ -->
+        <item name="android:windowTitleSize">24dp</item>
+        <!-- デフォルトのタイトルバーを無効にする -->
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+    </style>
+
+    <!-- タイトルバーのカスタマイズ-->
+    <style name="CustomActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/colorTitleBar</item>
+    </style>
+
+    <dimen name="textPadding">4dp</dimen>
+    <dimen name="framePadding">12dp</dimen>
+    <dimen name="topPadding">24dp</dimen>
+    <dimen name="strokeWidth">2dp</dimen>
+    <dimen name="strokeLine">1dp</dimen>
+
+    <dimen name="fontLarge">12sp</dimen>
+    <dimen name="fontHalfLarge">12sp</dimen>
+    <dimen name="fontNormal">10sp</dimen>
+
+</resources>

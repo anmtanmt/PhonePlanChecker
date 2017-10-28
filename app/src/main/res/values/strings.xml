@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Call Price Plan Checker</string>
+    <string name="launcher_name">Call Price Chk</string>
+
+    <!-- メイン画面 -->
+    <string name="text_description_input">Value used for calculation</string>
+    <string-array name="list_duration_call">
+        <item>30 sec</item>
+        <item>60 sec</item>
+    </string-array>
+    <string name="text_duration_description_1">every,</string>
+    <string name="text_currency_unit">cent Calculate.</string>
+    <string-array name="list_month_ago">
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>12 months</item>
+        <item>24 months</item>
+    </string-array>
+    <string name="text_description_period">ago until, analyze outgoing call history.</string>
+
+    <string name="menu_start_analysis">analyze</string>
+    <string name="button_start_analysis">analyze</string>
+
+    <string name="text_result_initial">Start with button to analyze\nThe results are displayed here</string>
+
+    <string name="progress_analyze">analyzing</string>
+
+    <string name="text_title_this_month">(this month)</string>
+
+    <string name="text_result_title_call_out_cnt">[Number of outgoing calls]</string>
+    <string name="text_result_total">Total : %1$d times</string>
+    <string name="text_result_within_5m">Call within 5 minutes : %1$d times</string>
+    <string name="text_result_within_5m_to_10m">Call within 5 to 10 minutes : %1$d times</string>
+    <string name="text_result_over_10m">Calls over 10 minutes : %1$d times</string>
+
+    <string name="text_result_no_call_out_cnt">no outgoing call history.</string>
+
+    <string name="text_result_title_price_image">[Price simulation]</string>
+    <string name="text_analysis_no_free_plan">No Unlimited Calls : %1$d cent</string>
+    <string name="text_analysis_5m_free_plan">With less than 5 minutes Unlimited Calls : Unlimited Calls Price + %1$d cent</string>
+    <string name="text_analysis_10m_free_plan">With less than 10 minutes Unlimited Calls : Unlimited Calls Price + %1$d cent</string>
+    <string name="text_analysis_5m_good_value">With less than 5 minutes Unlimited Calls you can earn if you charge less than %1$d cents.</string>
+    <string name="text_analysis_10m_good_value">With less than 10 minutes Unlimited Calls you can earn if you charge less than %1$d cents.</string>
+
+    <string name="toast_analyze_error">could not get the call history.</string>
+
+    <string name="toast_request_permission_call_log">Authority is required for call history analysis. Please give me permission if you do not mind.\nPermissions can also be changed from the main unit setting application.</string>
+
+    <string name="dialog_title_review">** Wish **</string>
+    <string name="msg_request_review">If you feel convenient, please give me 5 star review!\nIf you can review it will be my encouragement for development so please!</string>
+    <string name="dialog_select_ng">next time</string>
+    <string name="dialog_select_ok">review</string>
+</resources>
